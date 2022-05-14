@@ -1,0 +1,39 @@
+.films{
+  margin-top: 150px;
+  margin-left: 150px;
+  width: 800px;
+
+}
+
+table {
+  width: 800px !important;
+  height: 500px !important;
+}
+
+ mat-icon.ico{
+ margin-left: 10px !important;
+}
+
+h2 {
+  font-size: 25px !important;
+  font-weight: bold !important;
+  color:#495CA7;
+  ;
+}
+
+
+th {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: #A74977;
+}
+
+
+a {
+  margin-left: 8px !important;
+  text-decoration: none !important;
+  font-size: 22px;
+  color: #95290A;
+}
+
+

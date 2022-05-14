@@ -1,0 +1,27 @@
+
+
+<div class="films">
+
+
+  <h3>Detail</h3>
+
+  <mat-card>
+    <mat-card-title>{{this.movieDetail.title}} </mat-card-title>
+    <mat-card-subtitle>{{this.movieDetail.episode_id}} </mat-card-subtitle>
+    <mat-card-content>{{this.movieDetail.opening_crawl}} </mat-card-content>
+    <img mat-card-image>
+
+  </mat-card>
+
+  <div>
+    <h3>Discover the character?????</h3>
+    <ul class="items">
+      <li *ngFor="let data of people">
+        <a routerLink="/character/{{data}}"> {{data}}</a>
+      </li>
+    </ul>
+  </div>
+
+
+</div>
+
