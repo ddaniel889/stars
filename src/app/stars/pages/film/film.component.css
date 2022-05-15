@@ -38,6 +38,7 @@ mat-card-content{
 
 mat-card{
   margin-bottom: 35px !important;
+  background-image: linear-gradient(to right,#F0DB56 , #F1EFE1) !important;
 }
 
 a {

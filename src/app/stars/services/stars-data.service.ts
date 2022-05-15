@@ -13,16 +13,7 @@ export class StarsDataService {
 
    }
 
-    /* Get list of students */
-  public getStudent(url:string):Observable<any>{
-    return this.http.get<any[]>(url).pipe(
-      map( (resp: any) => {
-      return resp;
-      } ),
-      catchError(this.handleError<any>())
-      );
-
-   }
+ 
 
    public get(route:string): Observable<any> {
 

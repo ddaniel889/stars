@@ -27,6 +27,7 @@ mat-card{
   margin-bottom: 35px !important;
   border-radius: 10px;
   width: 80%;
+  background-image: linear-gradient(to right,#E3EEF3 , #F7E9F0) !important;
 }
 
 span.subtitle{

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Student } from '../../model/student'
+import { Film } from '../../model/student'
 import { StarsDataService } from './../../services/stars-data.service';
 
 @Component({
@@ -8,9 +8,8 @@ import { StarsDataService } from './../../services/stars-data.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public filmList :any=[];
   displayedColumns: string[] = ['Title', 'Director', 'Producer', 'Release Date','Movie Detail'];
-  dataSource:any;
+  dataSource: Array<Film> =[];
 
   constructor(private starsService:StarsDataService ) { }
 
@@ -22,9 +21,8 @@ export class HomeComponent implements OnInit {
     public getFilms(): void {
       this.starsService.get("films")
       .subscribe( data => {
-       this.filmList = data.results;
-       this.dataSource = this.filmList;
-       console.log(this.filmList);
+       this.dataSource = data.results;
+       console.log(this.dataSource);
       }
       );
     }
