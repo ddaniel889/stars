@@ -1,27 +1,35 @@
 
 
 <div class="films">
-
-
   <h3>Detail</h3>
-
   <mat-card>
     <mat-card-title>{{this.movieDetail.title}} </mat-card-title>
-    <mat-card-subtitle>{{this.movieDetail.episode_id}} </mat-card-subtitle>
-    <mat-card-content>{{this.movieDetail.opening_crawl}} </mat-card-content>
-    <img mat-card-image>
-
+    <mat-card-subtitle><span class="subtitle">Episode</span>{{this.movieDetail.episode_id}} </mat-card-subtitle>
+    <img mat-card-image src="../../../../../assets/img/films/{{this.movieDetail.episode_id}}.png" alt="Movie">
+    <mat-card-content>
+      <p>
+        {{this.movieDetail.opening_crawl}}
+      </p>
+    </mat-card-content>
   </mat-card>
-
-  <div>
-    <h3>Discover the character?????</h3>
-    <ul class="items">
-      <li *ngFor="let data of people">
-        <a routerLink="/character/{{data}}"> {{data}}</a>
-      </li>
-    </ul>
+  <div class="button">
+    <button mat-button color="primary" routerLink="/home">Back</button>
   </div>
 
+  <div>
+    <h3 class="discover">Discover who is the character?</h3>
+  </div>
 
+  <div class="character">
+    <div *ngFor="let data of people" class="character-container mat-elevation-z4"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color">
+    <a routerLink="/character/{{data}}"><mat-icon>search</mat-icon> {{data}}</a>
+   </div>
+  </div>
 </div>
 

@@ -9,15 +9,10 @@ import { CharacterComponent } from './pages/character/character.component';
 
 const routes: Routes = [
   {
-    path: '', component: StarsComponent,/*, children: [
-      { path: 'home', component: HomeComponent, pathMatch: 'full' },
-      { path: 'film/:id', component:  FilmComponent },
-      { path: 'character/:id', component:  CharacterComponent },
-
-    ]*/
+    path: '', component: StarsComponent
   },
   { path: 'home', component: HomeComponent, pathMatch: 'full' },
-  { path: 'film/:id', component:  FilmComponent/*loadChildren: () => import('./pages/nacionales/nacionales.module').then(m => m.NacionalesModule)*/ },
+  { path: 'film/:id', component:  FilmComponent },
   { path: 'character/:id', component:  CharacterComponent },
 ];
 

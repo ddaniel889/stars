@@ -9,6 +9,8 @@ import { StarsComponent } from './stars/stars.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import {MatRippleModule} from '@angular/material/core';
+import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './pages/home/home.component';
 import { FilmComponent } from './pages/film/film.component';
 import { CharacterComponent } from './pages/character/character.component';
@@ -28,7 +30,9 @@ import { CharacterComponent } from './pages/character/character.component';
     MatIconModule,
     HttpClientModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatRippleModule,
+    MatButtonModule
   ],
   providers: [HttpClient,StarsDataService]
 })

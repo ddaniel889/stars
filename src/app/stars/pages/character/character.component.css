@@ -1,0 +1,43 @@
+.detail{
+  margin-top: 50px;
+  margin-left: 150px;
+  width: 800px;
+}
+
+h2{
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #93470B;
+}
+
+mat-card-subtitle{
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #F31D82;
+  text-align: center;
+}
+mat-card-title{
+  text-align: center;
+}
+
+mat-card{
+  margin-bottom: 35px !important;
+  border-radius: 10px;
+  width: 80%;
+}
+
+span.subtitle{
+  margin-right: 15px !important;
+}
+
+img{
+  height: 30%;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-left: 150px;
+}
+

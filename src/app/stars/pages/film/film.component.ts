@@ -11,6 +11,11 @@ export class FilmComponent implements OnInit {
   public movieDetail :any=[];
   public people :any=[];
   public id: string | null = null;
+  public centered = false;
+  public disabled = false;
+  public unbounded = false;
+  public radius: number = 0;
+  public color: string = '';
 
   constructor(private starsService:StarsDataService,private  actRoute: ActivatedRoute) { }
 
