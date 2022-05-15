@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Film } from '../../model/student'
+import { Film } from '../../model/film'
 import { StarsDataService } from './../../services/stars-data.service';
 
 @Component({
